@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script type="text/javascript">
+
+function detectBrowse () {
+let result = 'Other';
+if (navigator.userAgent.indexOf('YaBrowser') !== -1 ) {
+result = 'Yandex Browser';
+} else if (navigator.userAgent.indexOf('Firefox') !== -1 ) {
+result = 'Mozilla Firefox';
+} else if (navigator.userAgent.indexOf('MSIE') !== -1 ) {
+result = 'Internet Exploder';
+} else if (navigator.userAgent.indexOf('Edg') !== -1 ) {
+result = 'Microsoft Edge';
+} else if (navigator.userAgent.indexOf('Opera') !== -1 ) {
+result = 'Opera';
+} else if (navigator.userAgent.indexOf("Chrome") !== -1 ) {
+result = 'Google Chrome';
+}
+return result;
+}
+
+alert(detectBrowse());
+</script>
+</head>
+<body>
+
+</body>
+</html>
